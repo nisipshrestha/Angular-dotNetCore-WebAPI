@@ -1,0 +1,38 @@
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-md-2" routerLink="">Web Api</a>
+    <input class="form-control form-control-dark " type="text" placeholder="Search">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="row">
+            <nav class="col-md-2 bg-light">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/customer">
+                            Customer
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/employee">
+                            Employee
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/product">
+                            Product
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="col-lg-10 pt-3 px-4">
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+    </div>
+</div>

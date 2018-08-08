@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+<table id="customerTbl" class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th>Status</th>
+      <th>Added Date</th>
+      <th>Modified Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of customers.body">
+      <td>{{c.id}}</td>
+      <td>{{c.firstName}}</td>
+      <td>{{c.lastName}}</td>
+      <td>{{c.age}}</td>
+      <td>{{c.status}}</td>
+      <td>{{c.addedDate}}</td>
+      <td>{{c.modifiedDate}}</td>
+      <td>
+          <button class="btn btn-success btn-sm">View</button>&nbsp;
+          <button class="btn btn-warning btn-sm">Edit</button>&nbsp;
+          <button class="btn btn-danger btn-sm">Delete</button>
+        </td>
+    </tr>
+  </tbody>
+</table>

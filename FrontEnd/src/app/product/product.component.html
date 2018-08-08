@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Model</th>
+      <th>Price</th>
+      <th>Added Date</th>
+      <th>Modified Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products.body">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.model}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.addedDate}}</td>
+      <td>{{p.modifiedDate}}</td>
+      <td>
+        <button class="btn btn-success btn-sm">View</button>&nbsp;
+        <button class="btn btn-warning btn-sm">Edit</button>&nbsp;
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
